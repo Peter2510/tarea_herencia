@@ -3,7 +3,7 @@ package src.carga;
 import src.vehiculo.Girar;
 import src.vehiculo.Vehiculo;
 
-public class Carga extends Vehiculo implements trasportarMaterial, Girar {
+public class Carga extends Vehiculo implements trasportarMateriales, Girar {
 
     public Carga(String nombre, String tipoCombustible, int cantidadCombustible, int cantidadPasajeros, int velocidadMaxima, double aceleracionBase) {
         super(nombre, tipoCombustible, cantidadCombustible, cantidadPasajeros, velocidadMaxima, aceleracionBase);

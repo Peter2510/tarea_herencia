@@ -1,7 +1,7 @@
 package src.camioneta;
 
-import src.vehiculo.Girar;
-import src.vehiculo.Vehiculo;
+import src.vehiculo.*;
+
 
 public class Camioneta extends Vehiculo implements trasportarPersonas, Girar {
 
@@ -10,22 +10,27 @@ public class Camioneta extends Vehiculo implements trasportarPersonas, Girar {
         super(nombre, tipoCombustible, cantidadCombustible, cantidadPasajeros, velocidadMaxima, aceleracionBase);
     }
 
-    @Override
+   // @Override
+
     public void trasportar() {
         System.out.println("Estoy implementando trasportar personas a varios lugares");
     }
 
-    @Override
+    
+   // @Overrid
+    
     public String getInfo() {
         return "Este vehiculo puede trasportar personas";
     }
 
-    @Override
+   // @Override
+
     public void girarDerecha() {
         System.out.println("Puedo girar a la derecha en la carretera");
     }
 
-    @Override
+    //@Override
+
     public void girarIzquierda() {
         System.out.println("Puedo girar a la izquierda en la carretera");
     }

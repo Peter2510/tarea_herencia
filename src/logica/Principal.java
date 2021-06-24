@@ -1,28 +1,15 @@
-package src.principal;
+package src.logica;
 
-import src.camioneta.*;
-import src.carrera.*;
+import src.logica.*;
 
 
 public class Principal{
 
-	public static void main(String[] args) {
-		
-                Camioneta camioneta1 = new Camioneta("Diesel", 120, 80, 120, 12.5);
-
-		System.out.println(camioneta1.getInfo());
-                System.out.println(camioneta1.toString());
-                camioneta1.trasportar();
-                System.out.println("\n\n");
+        public static void main(String[] args) {
                 
-                Carreras carrera1 = new Carreras("Gasolina", 90, 2, 270, 32.8);
+              Array array = new Array();
                 
-                System.out.println("Aceleracion base inicial: " + carrera1.getAceleracionBase());
-                carrera1.turbo(32.8);
-		System.out.println(carrera1.getInfo());
-                System.out.println(carrera1.toString());
-                
-	}
+        }
 
 
 }

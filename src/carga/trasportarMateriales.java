@@ -2,7 +2,7 @@
 package src.carga;
 
 
-public interface trasportarMaterial {
+public interface trasportarMateriales {
     
     public void trasportarMaterial();
     
