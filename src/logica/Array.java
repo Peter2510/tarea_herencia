@@ -5,53 +5,55 @@ import src.carga.Carga;
 import src.carrera.Carreras;
 
 public class Array {
-
-    private Camioneta ac[] = new Camioneta[5];
-    private Carreras aca[] = new Carreras[5];
-    private Carga cc[] = new Carga[5];
+  
+    private Camioneta ac[] = new Camioneta[10];
+    private Carreras aca[] = new Carreras[10];
+    private Carga cc[] = new Carga[10];
     private int numeroAleatorio;
     private double numeroAleatorioDouble;
 
     public Array() {
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 10; i++) {
             
             generarNumAleatorio();
             generarNumAleatorioDouble();
 
-            ac[i] = new Camioneta("Camiodneta", "Diesel", numeroAleatorio, numeroAleatorio, numeroAleatorio, numeroAleatorioDouble);
+            ac[i] = new Camioneta("Camioneta", "Diesel", numeroAleatorio, numeroAleatorio, numeroAleatorio, numeroAleatorioDouble);
            
         }
             
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 10; i++) {
             generarNumAleatorio();
             generarNumAleatorioDouble();
             aca[i] = new Carreras("Carro de Carreras", "Gasolina", numeroAleatorio, numeroAleatorio, numeroAleatorio, numeroAleatorioDouble);
             
         }
           
-             for (int i = 0; i < 4; i++) {
+             for (int i = 0; i < 10; i++) {
             generarNumAleatorio();
             generarNumAleatorioDouble();
             cc[i] = new Carga("Vehiculo de carga", "Diesel", numeroAleatorio, numeroAleatorio, numeroAleatorio, numeroAleatorioDouble);
 
         }
-       
-
-           for (int i = 0; i < 4; i++) {
-               tipoVehiculo(ac[i]);
-               tipoVehiculo(aca[i]);
-               tipoVehiculo(cc[i]);
             
-        }
+
+        verifcar();
             
         
 
     }
 
+    public void verifcar(){
+
+      tipoVehiculo(ac[0]);
+      tipoVehiculo(cc[0]);
+      tipoVehiculo(aca[0]);
+    }
+
     public void tipoVehiculo(Object objeto) {
 
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 7; i++) {
 
             if (objeto instanceof Camioneta) {
 
