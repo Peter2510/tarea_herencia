@@ -1,18 +1,24 @@
 package src.camioneta;
+
 import src.vehiculo.*;
 
-public class Camioneta extends Vehiculo{
 
-	
-	public Camioneta(String tipoCombustible){
-		
-		super(tipoCombustible, 95, 45, 120,5.4);
-	}
+public class Camioneta extends Vehiculo implements trasportarPersonas {
 
-	@Override
-	public String getInfo(){
+    public Camioneta(String tipoCombustible, int cantidadCombustible, int cantidadPasajeros, int velocidadMaxima, double aceleracionBase) {
 
-		return	"d";
-}
+        super(tipoCombustible, cantidadCombustible, cantidadPasajeros, velocidadMaxima, aceleracionBase);
+    }
+
+    @Override
+    public String getInfo() {
+
+        return "Tipo de combustible: " + getTipoCombustible() + " Cantidad de galones: " + getCantidadCombustible() + " Cantidad de pasajeros: " + getCantidadPasajeros();
+    }
+
+    @Override
+    public void trasportar() {
+        System.out.println("Trasporto personas a varios lugares");
+    }
 
 }
